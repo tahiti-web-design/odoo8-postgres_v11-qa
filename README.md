@@ -1,4 +1,4 @@
-# odoo8-postgresl-qa
+# odoo8-postgresl_v11-qa
 
 L'image est basée sur Centos 7 et expose les variables d'environnement suivant:
 
@@ -20,7 +20,7 @@ docker run --name odoo8-qa -d -p 8069:8069 -p 5432:5432 \
 
 ## Postgresql
 
-Postgresql 9.3 est installé depuis les packages officiels.
+Postgresql 11 est installé depuis les packages officiels.
 La base `odoo` est crée. Les utilisateurs suivants sont crées et autorisés à accéder à cette base (_user/password_):
 
 * admin/admin
