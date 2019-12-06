@@ -1,4 +1,4 @@
-# odoo8-postgresl_v11-qa
+# odoo8-postgres_v11-qa
 
 L'image est basée sur Centos 7 et expose les variables d'environnement suivant:
 
@@ -12,10 +12,10 @@ Cette dernière désactive systemd qui peut poser des problèmes de sécurité l
 Exemple d'utilisation de l'image:
 
 ```bash
-docker run --name odoo8-postgresl_v11-qa -d -p 8069:8069 -p 5432:5432 \
+docker run --name odoo8-postgres_v11-qa -d -p 8069:8069 -p 5432:5432 \
     -e ODOO_RPM_URL="http://cdn.tahiti-web-management.com/odoo_8.0.20171001.noarch.rpm" \
     -e ODOO_SRC_URL="http://cdn.tahiti-web-management.com/odoo_8.0.20171001.tar.gz" \
-    tahitiwebdesign/odoo8-postgresl_v11-qa
+    tahitiwebdesign/odoo8-postgres_v11-qa
 ```
 
 ## Postgresql
